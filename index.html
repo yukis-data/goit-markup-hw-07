@@ -11,26 +11,26 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Web-Studio</title>
   </head>
-  <body class="page">
+  <body class="page-body">
     <!--page header-->
     <header class="page-header">
-      <div class="header-nav container">
-        <nav>
+      <div class="\page-header__container/ header-nav container">
+        <nav class="\site-nav/">
           <!--top line section-->
-          <a href="./index.html" class="logo list"><span class="logo-item">Web</span>Studio</a>
+          <a href="./index.html" class="logo list"><span class="logo__item">Web</span>Studio</a>
     
           <!--top line lords-->
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="active nav-item list"><span class="active-title">Студия</span></a></li>
+          <ul class="\site-nav__list/ list">
+            <li class="\site-nav__item/"><a href="./index.html" class="\site-nav__link/ active nav-item list"><span class="active-title">Студия</span></a></li>
             <li><a href="./portfolio.html" class="nav-item list">Портфолио</a></li>
             <li><a href="" class="nav-item list">Контакты</a></li>
           </ul>
         </nav>
     
-        <ul class="site-contacts list">
-          <li>
-            <a href="mailto:info@example.com" class="nav-contacts list">
-              <svg class="mail">
+        <ul class="\contacts/ site-contacts list">
+          <li class="\contacts__list/">
+            <a href="mailto:info@example.com" class="\contacts__link/ nav-contacts list">
+              <svg class="\contacts__icon/ mail">
                 <use href="./img/icons/sprite.svg#icon-envelope"></use>
               </svg>
               info@example.com
@@ -49,17 +49,17 @@
     </header>
     
     <!--page section with button-->
-    <section class="section-button">
-      <div class="button">
-        <h1 class="section-button-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="page-button" data-modal-open>Заказать услугу</button>
+    <section class="\button/ section-button">
+      <div class="\button__container/ button">
+        <h1 class="\button__title/ section-button-title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="\button__element/ page-button" data-modal-open>Заказать услугу</button>
       </div>
 
       <!--backdrop and modal window-->
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-close" data-modal-close>
-            <svg class="close-svg">
+        <div class="\modal-window/ modal">
+          <button class="\modal-window__button-close/ modal-close" data-modal-close>
+            <svg class="\modal-window__icon/ close-svg">
               <use href="./img/icons/sprite.svg#icon-modal-close"></use>
             </svg>
           </button>
