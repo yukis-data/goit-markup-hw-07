@@ -1,0 +1,43 @@
+@import '../utils/color';
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  background-color: $modal-background-color;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-window__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px 6px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $modal-background-color;
+
+  cursor: pointer;
+
+  &:hover > .close-svg,
+  &:active > .close-svg {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal-window__icon {
+  width: 11px;
+  height: 11px;
+  fill: $logo-text;
+}

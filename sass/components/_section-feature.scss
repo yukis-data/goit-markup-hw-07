@@ -1,0 +1,46 @@
+@import '../utils/color';
+
+.feature {
+  background-color: $main-background-color;
+}
+
+.feature--padding {
+  padding-bottom: 0px;
+}
+
+.feature__list {
+  display: flex;
+}
+
+.feature__bit {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature__item {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: $second-background-color;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  color: $main-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

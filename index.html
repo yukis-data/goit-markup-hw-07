@@ -6,39 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" >
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Web-Studio</title>
   </head>
   <body class="page-body">
     <!--page header-->
     <header class="page-header">
-      <div class="\page-header__container/ header-nav container">
-        <nav class="\site-nav/">
+      <div class="page-header__container container">
+        <nav class="site-nav">
           <!--top line section-->
-          <a href="./index.html" class="logo list"><span class="logo__item">Web</span>Studio</a>
+          <a href="./index.html" class="logo list"><span class="logo--accent">Web</span>Studio</a>
     
           <!--top line lords-->
-          <ul class="\site-nav__list/ list">
-            <li class="\site-nav__item/"><a href="./index.html" class="\site-nav__link/ active nav-item list"><span class="active-title">Студия</span></a></li>
-            <li><a href="./portfolio.html" class="nav-item list">Портфолио</a></li>
-            <li><a href="" class="nav-item list">Контакты</a></li>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link active list"><span class="active-title">Студия</span></a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link list">Портфолио</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link list">Контакты</a></li>
           </ul>
         </nav>
     
-        <ul class="\contacts/ site-contacts list">
-          <li class="\contacts__list/">
-            <a href="mailto:info@example.com" class="\contacts__link/ nav-contacts list">
-              <svg class="\contacts__icon/ mail">
+        <ul class="contacts list">
+          <li class="contacts__list">
+            <a href="mailto:info@example.com" class="contacts__link list">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./img/icons/sprite.svg#icon-envelope"></use>
               </svg>
               info@example.com
             </a>
           </li>
-          <li>
-            <a href="tel:+38099111111" class="nav-contacts list">
-            <svg class="phone">
+          <li class="contacts__list">
+            <a href="tel:+38099111111" class="contacts__link list">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./img/icons/sprite.svg#icon-phone"></use>
             </svg>
             +38 099 111 11 11
@@ -49,73 +49,73 @@
     </header>
     
     <!--page section with button-->
-    <section class="\button/ section-button">
-      <div class="\button__container/ button">
-        <h1 class="\button__title/ section-button-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="\button__element/ page-button" data-modal-open>Заказать услугу</button>
+    <section class="button">
+      <div class="button__container">
+        <h1 class="button__title">Эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="button__element" data-modal-open>Заказать услугу</button>
       </div>
 
       <!--backdrop and modal window-->
       <div class="backdrop is-hidden" data-modal>
-        <div class="\modal-window/ modal">
-          <button class="\modal-window__button-close/ modal-close" data-modal-close>
-            <svg class="\modal-window__icon/ close-svg">
+        <div class="modal-window">
+          <button class="modal-window__button-close" data-modal-close>
+            <svg class="modal-window__icon">
               <use href="./img/icons/sprite.svg#icon-modal-close"></use>
             </svg>
           </button>
 
           <form name="form-signup" class="form-signup">
-            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="form-signup__title">Оставьте свои данные, мы вам перезвоним</h2>
             
             <div class="form-group">
-              <div class="form-field">
-                <label for="nick-name"  class="form-name">Имя</label>
-                <div class="form-item">
-                  <input type="text" name="name" id="nick-name" class="form-input">
-                  <svg class="icon-form" width="18" height="18">
+              <div class="form-group__container"> 
+                <label for="nick-name" class="form-group__label">Имя</label>
+                <div class="form-group__item">
+                  <input type="text" name="name" id="nick-name" class="form-group__input">
+                  <svg class="form-group__icon" width="18" height="18">
                     <use href="./img/icons/form-icons.svg#icon-person"></use>
                   </svg>
                 </div>
               </div>
               
-              <div class="form-field">
-                <label for="tel"  class="form-name">Телефон</label>
-                <div class="form-item">
-                  <input type="tel" name="tel" id="tel" class="form-input">
-                  <svg class="icon-form" width="18" height="18">
+              <div class="form-group__container">
+                <label for="tel" class="form-group__label">Телефон</label>
+                <div class="form-group__item">
+                  <input type="tel" name="tel" id="tel" class="form-group__input">
+                  <svg class="form-group__icon" width="18" height="18">
                     <use href="./img/icons/form-icons.svg#icon-phone"></use>
                   </svg>
                 </div>
               </div>
               
-              <div class="form-field">
-                <label for="email" class="form-name">Почта</label>
-                <div class="form-item">
-                  <input type="email" name="email" id="email" class="form-input">
-                  <svg class="icon-form" width="18" height="18">
+              <div class="form-group__container">
+                <label for="email" class="form-group__label">Почта</label>
+                <div class="form-group__item">
+                  <input type="email" name="email" id="email" class="form-group__input">
+                  <svg class="form-group__icon" width="18" height="18">
                     <use href="./img/icons/form-icons.svg#icon-email"></use>
                   </svg>
                 </div>
               </div>
               
-              <div class="form-field">
-                <label for="comment"  class="form-name">Комментарий</label>
-                <textarea name="comment" id="comment" id="comment" class="comment-text" placeholder="Введите текст"></textarea>
+              <div class="form-group__container">
+                <label for="comment"  class="form-group__label">Комментарий</label>
+                <textarea name="comment" id="comment" id="comment" class="form-group__comment-text" placeholder="Введите текст"></textarea>
               </div>
             </div>
 
             <div class="form-policy">
-              <label class="policy-text">
-                <input type="checkbox" name="checkbox">
+              <label class="form-policy__label">
+                <input type="checkbox" name="checkbox" class="form-policy__input">
                 <!--<span class="checkbox-icon"></span>-->
-                <svg class="checkbox-icon" width="16" height="15">
+                <svg class="form-policy__icon" width="16" height="15">
                   <use href="./img/icons/form-icons.svg#icon-check"></use>
                 </svg>
-                Соглашаюсь с рассылкой и принимаю <span class="text-bit"> Условия договора</span>
+                Соглашаюсь с рассылкой и принимаю <span class="form-policy__text-bit"> Условия договора</span>
               </label>
             </div>
 
-            <button type="submit" class="form-button">Отправить</button>
+            <button type="submit" class="form-signup__button">Отправить</button>
 
           </form>
 
@@ -127,37 +127,37 @@
     <main>
       <!--section feature-->
       <section class="feature">
-        <div class="container section">
-          <ul class="feature-list list">
-            <li>
-              <svg class="feature-item">
+        <div class="feature--padding container section">
+          <ul class="feature__list list">
+            <li class="feature__bit">
+              <svg class="feature__item">
                 <use href="./img/icons/sprite.svg#icon-antenna" widht="70" height="70"></use>
               </svg>
-              <h3 class="feature-title">Внимание к деталям</h3>
-              <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <h3 class="feature__title">Внимание к деталям</h3>
+              <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
-              <svg class="feature-item">
+            <li class="feature__bit">
+              <svg class="feature__item">
                 <use href="./img/icons/sprite.svg#icon-clock" widht="70" height="70"></use>
               </svg>
-              <h3 class="feature-title">Пунктуальность</h3>
-              <p class="feature-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              <h3 class="feature__title">Пунктуальность</h3>
+              <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <svg class="feature-item">
+            <li class="feature__bit">
+              <svg class="feature__item">
                 <use href="./img/icons/sprite.svg#icon-diagram" widht="70" height="70"></use>
               </svg>
-              <h3 class="feature-title">Планирование</h3>
-              <p class="feature-text">Равным образом консультация с широким активом в значительной степени обуславливает.
+              <h3 class="feature__title">Планирование</h3>
+              <p class="feature__text">Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
-              <svg class="feature-item">
+            <li class="feature__bit">
+              <svg class="feature__item">
                 <use href="./img/icons/sprite.svg#icon-astronaut" widht="70" height="70"></use>
               </svg>
-              <h3 class="feature-title">Современные технологии</h3>
-              <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <h3 class="feature__title">Современные технологии</h3>
+              <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>

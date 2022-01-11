@@ -334,9 +334,7 @@ nav {
 
   width: 100%;
 }
-/* .form-group {
-  height: 342px;
-} */
+
 .form-group > .form-field:not(:last-child) {
   margin-bottom: 10px;
 }

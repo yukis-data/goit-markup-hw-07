@@ -1,0 +1,172 @@
+@import '../utils/color';
+
+.form-signup {
+  width: 528px;
+  height: 581px;
+  padding: 40px 40px;
+}
+
+.form-signup__title {
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $logo-text;
+
+  margin-bottom: 12px;
+}
+
+.form-group__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.form-group__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $second-text-color;
+}
+
+.form-group__item {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus-within {
+    border-color: $accent-color;
+    fill: $accent-color;
+    outline: none;
+  }
+}
+
+.form-group__input {
+  width: 100%;
+  padding-left: 42px;
+  padding: 11px 12px 11px 42px;
+  border: none;
+
+  &:hover,
+  &:focus-within {
+    outline: none;
+  }
+}
+
+.form-group__icon {
+  position: absolute;
+  top: 12px;
+  left: 11px;
+}
+
+.form-group__comment-text {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:hover,
+  &t:focus {
+    border-color: $accent-color;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+}
+
+.form-policy {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-policy__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 3px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $second-text-color;
+}
+
+.form-policy__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.form-policy__input:checked + .form-policy__icon {
+  background-color: $accent-color;
+  border-color: $accent-color;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $accent-text-color;
+  object-fit: cover;
+}
+
+.form-policy__text-bit {
+  text-decoration: underline;
+  color: $accent-color;
+  margin-left: 4px;
+}
+
+.form-policy__icon {
+  margin-right: 7px;
+
+  border: 1px solid $logo-text;
+  border-radius: 2px;
+  fill: $accent-text-color;
+  object-fit: cover;
+}
+
+.form-signup__button {
+  width: 200px;
+  height: 50px;
+
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  color: $accent-text-color;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-button-color;
+    // box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    //   0px 2px 2px rgb(0 0 0 / 12%);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
