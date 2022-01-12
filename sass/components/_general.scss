@@ -23,8 +23,12 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 // /*page index*/
-.page {
+.page-body {
   color: $second-text-color;
   font-family: Roboto, sans-serif;
   background-color: $main-background-color;
@@ -44,4 +48,14 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+// /*page portfolio*/
+.page-portfolio {
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  background-color: var(--main-background-color);
 }

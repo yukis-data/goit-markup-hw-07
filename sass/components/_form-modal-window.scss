@@ -165,8 +165,7 @@
   &:hover,
   &:focus {
     background-color: $accent-button-color;
-    // box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-    //   0px 2px 2px rgb(0 0 0 / 12%);
+    // box-shadow: $shadow-modal-button;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
