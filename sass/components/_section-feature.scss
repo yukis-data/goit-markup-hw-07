@@ -12,7 +12,7 @@
   display: flex;
 }
 
-.feature__bit {
+.feature__item {
   width: 270px;
 
   &:not(:last-child) {
@@ -20,7 +20,7 @@
   }
 }
 
-.feature__item {
+.feature__img {
   display: inline-flex;
   width: 270px;
   height: 120px;

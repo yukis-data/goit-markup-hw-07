@@ -1,10 +1,10 @@
 @import '../utils/variables';
 
-.team__bg-color {
+.section-team {
   background-color: $second-background-color;
 }
 
-.team__title {
+.section-team__title {
   margin-bottom: 50px;
 
   color: $main-text-color;
@@ -15,11 +15,11 @@
   text-align: center;
 }
 
-.team__list {
+.team-list {
   display: flex;
 }
 
-.team__member {
+.team-list__item {
   width: 270px;
 
   text-align: center;
@@ -38,7 +38,7 @@
   overflow: hidden;
 }
 
-.team__names {
+.team-list__names {
   margin-bottom: 10px;
 
   color: $main-text-color;
@@ -46,7 +46,7 @@
   letter-spacing: 0.03em;
 }
 
-.team__text {
+.team-list__text {
   margin-bottom: 16px;
   color: $second-text-color;
 }
