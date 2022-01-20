@@ -443,12 +443,12 @@ input:checked + .checkbox-icon {
   fill: var(--accent-text-color);
   object-fit: cover;
 }
-
+/* 
 .text-bit {
   text-decoration: underline;
   color: var(--accent-color);
   margin-left: 4px;
-}
+} */
 
 .checkbox-icon {
   margin-right: 7px;

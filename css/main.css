@@ -456,7 +456,7 @@ ul {
      object-fit: cover;
 }
 
-.form-policy__text-bit {
+.form-policy__text-item {
   text-decoration: underline;
   color: #2196f3;
   margin-left: 4px;
@@ -650,7 +650,7 @@ ul {
           justify-content: center;
 }
 
-.team-icons__bit:not(:last-child) {
+.team-icons_item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -693,7 +693,7 @@ ul {
   height: 92px;
 }
 
-.client__bit:not(:last-child) {
+.client__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -750,7 +750,7 @@ ul {
   line-height: 1.71;
 }
 
-.address__bit {
+.address__item {
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 9px;
@@ -783,7 +783,7 @@ ul {
   color: #ffffff;
 }
 
-.footer-contacts__bit {
+.footer-contacts__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -906,7 +906,7 @@ ul {
           justify-content: center;
 }
 
-.filtres__bit:not(:last-child) {
+.filtres__item:not(:last-child) {
   margin-right: 8px;
 }
 
