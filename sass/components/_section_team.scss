@@ -59,9 +59,9 @@
   justify-content: center;
 }
 
-.team-icons_item {
-  &:not(:last-child) {
-    margin-right: 10px;
+.team-icons__item {
+  &:not(:first-child) {
+    margin-left: 10px;
   }
 }
 
