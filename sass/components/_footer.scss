@@ -55,11 +55,20 @@
   color: $accent-text-color;
 }
 
+.footer-contacts__list {
+  display: inline-flex;
+  width: 206px;
+}
+
 .footer-contacts__item {
   display: inline-flex;
 
   width: 44px;
   height: 44px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .footer-contacts__link {

@@ -783,12 +783,23 @@ ul {
   color: #ffffff;
 }
 
+.footer-contacts__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 206px;
+}
+
 .footer-contacts__item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 44px;
   height: 44px;
+}
+
+.footer-contacts__item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .footer-contacts__link {
